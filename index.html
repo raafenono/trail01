@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>NIRMAAN 2020</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
+  <meta property="og:title" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+
+  <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+
+  <!-- Place your favicon.ico and apple-touch-icon.png in the template root directory -->
+  <link href="favicon.ico" rel="shortcut icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate-css/animate.min.css" rel="stylesheet">
+
+  <!-- countdown CSS files -->
+  <link rel="stylesheet" type="text/css" href="countdown/flipdown.css">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- scripts -->
+
+
+  <script src="js/jssor.slider-28.0.0.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+      window.jssor_1_slider_init = function() {
+
+          var jssor_1_SlideshowTransitions = [
+            {$Duration:800,x:-0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+            {$Duration:800,x:0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2}
+          ];
+
+          var jssor_1_options = {
+            $AutoPlay: 1,
+            $SlideshowOptions: {
+              $Class: $JssorSlideshowRunner$,
+              $Transitions: jssor_1_SlideshowTransitions,
+              $TransitionsOrder: 1
+            },
+            $ArrowNavigatorOptions: {
+              $Class: $JssorArrowNavigator$
+            },
+            $ThumbnailNavigatorOptions: {
+              $Class: $JssorThumbnailNavigator$,
+              $Orientation: 2,
+              $NoDrag: true
+            }
+          };
+
+          var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+          /*#region responsive code begin*/
+
+          var MAX_WIDTH = 980;
+
+          function ScaleSlider() {
+              var containerElement = jssor_1_slider.$Elmt.parentNode;
+              var containerWidth = containerElement.clientWidth;
+
+              if (containerWidth) {
+
+                  var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                  jssor_1_slider.$ScaleWidth(expectedWidth);
+              }
+              else {
+                  window.setTimeout(ScaleSlider, 30);
+              }
+          }
+
+          ScaleSlider();
+
+          $Jssor$.$AddEvent(window, "load", ScaleSlider);
+          $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+          $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+          /*#endregion responsive code end*/
+      };
+  </script>
+  <script>
+    document.getElementById("bg").playbackRate = 10;
+  </script>
+</head>
+
+<body>
+  <div id="preloader"></div>
+
+    <section class="top-nav hidden-xs">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="top-left">
+
+              <ul>
+                <li><a href="https://www.facebook.com/nirmaan_ouce"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/NirmaanOuce"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.instagram.com/nirmaan_ouce/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              </ul>
+
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="top-right">
+              <img src="img/logos/logo1.png" height="75px" alt="" title="" />
+              <img src="img/logos/logo3.png" height="75px" alt="" title="" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  <!--==========================
+  Hero Section
+  ============================-->
+  <section id="hero">
+    
+    <div class="hero-container">
+      <div class="wow fadeIn">
+        <div >
+          <img src="img/logos/logo2.png" height="150px" alt="" title="" /> 
+          <br>
+          <span style="margin-top: 40px; color: #333; font-size: 70px; font-weight: 600; text-shadow: 5px 5px 10px white;">NIRMAAN 2020</span>
+        </div>
+        <h1>19th National Level Technical Symposium</h1>
+        <h2><span style=" font-weight: 600;" class="rotating">INITIATE. , INCULCATE. , INSPIRE. </span></h2>
+        <div class="actions">
+          <a href="#about" class="btn-get-started">Get Started</a>
+          <!-- <a href="#services" class="btn-services">Our Services</a> -->
+        </div>
+
+
+        <div style="padding-top: 20px; text-align: center;" class="container">
+          <div class="row">
+            <div style="display: inline-block;" id="flipdown" class="flipdown"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--==========================
+  Header Section
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <!-- <a href="#hero"><img src="img/logos/logo2.png" alt="" title="" /></a> -->
+        <h1><a href="#hero">NIRMAAN</a></h1>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#hero"><i class="fa fa-home"></i> Home</a></li>
+          <li><a href="#about"><i class="fa fa-address-card-o"></i> About</a></li>          
+          <li><a href="#services"><i class="fa fa-photo"></i> Gallery</a></li>
+          <li><a href="#testimonials"><i class="fa fa-microphone"></i> Testimonials</a></li>
+          <li><a href="#portfolio"><i class="fa fa-money"></i> Sponsors</a></li>
+          <li><a href="team.html"><i class="fa fa-users"></i> Team</a></li>
+          <li class="menu-has-children"><a href="event.html"><i id="bruh" class="fa fa-calendar"></i> Events</a>
+            <ul>
+              <li><a href="event.html#techeve">Technical Events</a></li>
+              <li><a href="event.html#ntecheve">Non-Technical Events</a></li>
+              <li><a href="event.html#oncontest">Online contests</a></li>
+            </ul>
+          </li>
+          <li><a href="workshop.html"><i class="fa fa-gear"></i> Workshops</a></li>
+          <li><a href="ca.html"><i class="fa fa-user"></i> Campus Ambassador</a></li>
+          <li><a href="#contact"><i class="fa fa-phone"></i> Contact Us</a></li>
+        </ul>
+      </nav>
+      <!-- #nav-menu-container -->
+    </div>
+  </header>
+  <!-- #header -->
+
+  <!--==========================
+  About Section
+  ============================-->
+  <section id="about">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">About NIRMAAN</h3>
+          <div class="section-title-divider"></div>
+          <p class="section-description">Initiate. Inculcate. Inspire.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container about-container wow fadeInUp">
+      <div class="row">
+
+        <div class="col-lg-6 about-img">
+          <video controls autoplay>
+            <source src="img/bruh.mp4" type="video/mp4"> 
+          </video>
+        </div>
+
+        <div class="col-md-6 about-content">
+          <h2 class="about-title">19th National Level Technical Symposium</h2>
+          <p class="about-text">
+            Nirmaan is a National Level Technical Symposium that recognizes the innate capabilities to novice under graduates and 
+            make them succeed as future revolutioists of Civil engineering.
+            We aimed at channeling the mountain of potential resources by reinvigorating them through
+            civilized innovaive ideas, dynamic process and sustainable future.
+          </p>
+          <p class="about-text">
+            Being concrete about thoughts and reinforcing the objectives in this year 2020, 
+            we proudly present Nirmaan & this would definitely make you experience the newest trend of 
+            civil engineering.
+          </p>
+          <p class="about-text">
+            We, the team <b>NIRMAAN</b>, by your support would be pleased to present the 
+            worlds master minds of Civil Engineering.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div style="padding-top:50px;" class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">About Us</h3>
+          <div class="section-title-divider"></div>
+          <p class="section-description"></p>
+        </div>
+      </div>
+    </div>
+    <div class="container about-container wow fadeInUp">
+      <div class="row">
+
+        <div class="col-lg-6 about-img">
+          <img style="padding-bottom: 20px;" src="img/aboutnirmaan.jpeg" alt="">
+        </div>
+
+        <div class="col-md-6 about-content">
+          <h2 class="about-title"></h2>
+          <p class="about-text">
+            The Department of Civil Engineering.
+            UCE(A). Osmania University was
+            established in the year 1929, with a
+            vision to be as a leading academic
+            department on pace with global
+            standards and contribute to the regional
+            growth and meet the challenges of Civil
+            Engineering Profession.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--==========================
+  Gallery Section
+  ============================-->
+  <section id="services">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-8">
+          <h3 style="font-size: 40px;" class="subscribe-title">Event gallery</h3>
+          <!-- <div class="section-title-divider"></div> -->
+          <p style="font-size: 20px;" class="subscribe-text">last fest pictures!</p>
+        </div>
+
+        <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:700px;overflow:hidden;visibility:hidden;">
+          <!-- Loading Screen -->
+          <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+              <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
+          </div>
+          <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:680px;overflow:hidden;">
+              <div>
+                  <img data-u="image" src="img/1.jpeg" />
+                  <div u="thumb">Slide Description 001
+                  </div>
+              </div>
+              <div>
+                  <img data-u="image" src="img/2.jpeg" />
+                  <div u="thumb">Slide Description 002
+                  </div>
+              </div>
+              <div>
+                  <img data-u="image" src="img/3.jpeg" />
+                  <div u="thumb">Slide Description 003
+                  </div>
+              </div>
+              <div>
+                  <img data-u="image" src="img/4.jpeg" />
+                  <div u="thumb">Slide Description 004
+                  </div>
+              </div>
+              <div>
+                  <img data-u="image" src="img/5.jpeg" />
+                  <div u="thumb">Slide Description 005
+                  </div>
+              </div>
+
+          </div><a data-scale="0" href="https://www.jssor.com" style="display:none;position:absolute;">image gallery</a>
+          <!-- Thumbnail Navigator -->
+          <div u="thumbnavigator" style="position:absolute;bottom:0px;left:0px;width:980px;height:50px;color:#FFF;overflow:hidden;cursor:default;background-color:rgba(0,0,0,.5);">
+              <div u="slides">
+                  <div u="prototype" style="position:absolute;top:0;left:0;width:980px;height:50px;">
+                      <div u="thumbnailtemplate" style="position:absolute;top:0;left:0;width:100%;height:100%;font-family:arial,helvetica,verdana;font-weight:normal;line-height:50px;font-size:16px;padding-left:10px;box-sizing:border-box;"></div>
+                  </div>
+              </div>
+          </div>
+          <!-- Arrow Navigator -->
+          <div data-u="arrowleft" class="jssora061" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+              <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                  <path class="a" d="M11949,1919L5964.9,7771.7c-127.9,125.5-127.9,329.1,0,454.9L11949,14079"></path>
+              </svg>
+          </div>
+          <div data-u="arrowright" class="jssora061" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+              <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                  <path class="a" d="M5869,1919l5984.1,5852.7c127.9,125.5,127.9,329.1,0,454.9L5869,14079"></path>
+              </svg>
+          </div>
+        </div>
+        <script type="text/javascript">jssor_1_slider_init();
+        </script>
+      </div>
+    </div>
+  </section>
+
+  <!--==========================
+  Testimonials Section
+  ============================-->
+  <section id="testimonials">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">Testimonials</h3>
+          <div class="section-title-divider"></div>
+          <!-- <p class="section-description">Erdo lide, nora porodo filece, salvam esse se, quod concedimus ses haec dicturum fuisse</p> -->
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3">
+          <div class="profile">
+            <div class="pic"><img src="img/kumarmolugaram.png" alt=""></div>
+            <h4>Prof. Kumar Molugaram</h4>
+            <span>Principal <br> UCE(A), OU</span>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="quote">
+            <b><img src="img/quote_sign_left.png" alt=""></b> 
+            I'm glad to learn that students of civil engineering, University College of 
+            engineering (A), Osmania University, Hyderabad are organising a national level technical 
+            symposium NIRMAAN with lot of professional events to bring out the hidden talent of civil
+            engineers 
+            This symposium will provide an opportunity to the students to exhibit 
+            their innovative skills and talent. I am sure that the participants coming from 
+            different parts of the country will share a platform to interact with their peers and also with the experts.
+
+            These kind of events help in bringing out the organizing skills of the students and enable them to showcase 
+            their technical skills. I compliment the organizers of the NIRMAAN for their  attempt and wish them all success
+            <small><img src="img/quote_sign_right.png" alt=""></small>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-9">
+          <div class="quote">
+            <b><img src="img/quote_sign_left.png" alt=""></b> 
+            The prime objective of NIRMAAN is to create a platform to bring out the technical 
+            innovations and presentation skills of the students of civil 
+            engineering. The students of this department are always in the 
+            forefront of organizing such events every year
+            I'm sure the young minds will derive techincal knowledge from 
+            presentations, technical exhibitions and lectures 
+            by eminent personalities from civil engineering fields
+            
+            <small><img src="img/quote_sign_right.png" alt=""></small>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="profile">
+            <div class="pic"><img src="img/gopalnaik.jpeg" alt=""></div>
+            <h4>Prof. M. Gopal Naik</h4>
+            <span>Head of Department</span>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 20px;" class="row">
+        <div class="col-md-3">
+          <div class="profile">
+            <div class="pic"><img src="img/shashikanth.png" alt=""></div>
+            <h4>Dr.K.Shashikanth</h4>
+            <span> Student Advisor <br>
+              NIRMAAN 2k20 <br>
+             Associate Professor,CED</span>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="quote">
+            <b><img src="img/quote_sign_left.png" alt=""></b> 
+            World is moving towards smart and Innovation solutions to all the problems 
+            of modern society. Therefore, we need to bring more innovations and enthuse
+            with more such concepts. I profusely feel programs like NIRMAAN will be confluence
+            point of such thoughts and deliberations. 
+            NIRMAAN should aim high and create good ecosystem to flourish and
+            inculcate scientific temper, start up culture, hub of innovative ideas.  
+            The programs of NIRMAAN 2020 are exciting and exhilarating.            
+            <small><img src="img/quote_sign_right.png" alt=""></small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!--==========================
+  Sponsors Section
+  ============================-->
+  <section id="portfolio">
+
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">Sponsors</h3>
+          <div class="section-title-divider"></div>
+          <p class="section-description">Our sponsors</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3">
+          <a class="portfolio-item" style="background-image: url(img/sponcers/0.png);" href="https://myhomeconstructions.com/">
+            <div class="details">
+              <h4>My Home group</h4>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-3">
+          <a class="portfolio-item" style="background-image: url(img/sponcers/3.jpg);" href="">
+            <div class="details">
+              <h4>GTS</h4>
+              <!-- <span>Alored dono par</span> -->
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-3">
+          <a class="portfolio-item" style="background-image: url(img/sponcers/4.jpg);" href="">
+            <div class="details">
+              <h4>Anurag Infra Projects</h4>
+              <!-- <span>Alored dono par</span> -->
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-3">
+          <a class="portfolio-item" style="background-image: url(img/sponcers/5.jpg);" href="">
+            <div class="details">
+              <h4>Mission Bhagiratha</h4>
+              <!-- <span>Alored dono par</span> -->
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-3">
+          <a class="portfolio-item" style="background-image: url(img/sponcers/6.png);" href="">
+            <div class="details">
+              <h4>ACE Engineering College</h4>
+              <!-- <span>Alored dono par</span> -->
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-3">
+          <a class="portfolio-item" style="background-image: url(img/sponcers/7.png);" href="">
+            <div class="details">
+              <h4>Krans Projects pvt. ltd.</h4>
+              <!-- <span>Alored dono par</span> -->
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-3">
+          <a class="portfolio-item" style="background-image: url(img/sponcers/1.png);" href="">
+            <div class="details">
+              <h4>Aadharshila structural consultants</h4>
+              <!-- <span>Alored dono par</span> -->
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-3">
+          <a class="portfolio-item" style="background-image: url(img/sponcers/2.png); width: 100%;" href="">
+            <div class="details">
+              <h4>SS World group</h4>
+              <!-- <span>Alored dono par</span> -->
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    
+  <!--==========================
+  Ex-Sponsors Section
+  ============================-->
+    <div id="client">
+      <div class="container">
+        <div class="row">
+          <div style="padding-top: 30px; padding-bottom: 20px;" class="col-md-12">
+            <h3 class="section-title">Previous Sponsors</h3>
+            <div class="section-title-divider"></div>
+          </div>
+
+          <div class="col-sm-4 col-md-2">
+            <span><img src="img/prev_sponcers/1.jpg" alt=""></span>
+          </div>
+
+          <div class="col-sm-4 col-md-2">
+            <span><img src="img/prev_sponcers/2.jpg" alt=""></span>
+          </div>
+
+          <div class="col-sm-4 col-md-2">
+            <span><img src="img/prev_sponcers/14.jpg" alt=""></span>
+          </div>
+
+          <div class="col-sm-4 col-md-2">
+            <span><img src="img/prev_sponcers/4.jpg" alt=""></span>
+          </div>
+
+          <div class="col-sm-4 col-md-2">
+            <span><img src="img/prev_sponcers/5.jpg" alt=""></span>
+          </div>
+
+          <div class="col-sm-4 col-md-2">
+            <span><img src="img/prev_sponcers/6.jpg" alt=""></span>
+          </div>
+
+        </div>
+
+        <br><br>
+
+        <div class="row">
+
+          <div class="col-sm-4 col-md-2">
+            <span><img src="img/prev_sponcers/7.png" alt=""></span>
+          </div>
+
+          <div class="col-sm-4 col-md-2">
+            <span><img src="img/prev_sponcers/8.jpg" alt=""></span>
+          </div>
+
+          <div class="col-sm-4 col-md-2">
+            <span><img src="img/prev_sponcers/9.jpg" alt=""></span>
+          </div>
+
+          <div class="col-sm-4 col-md-2">
+            <span><img src="img/prev_sponcers/10.jpg" alt=""></span>
+          </div>
+
+          <div class="col-sm-4 col-md-2">
+            <span><img src="img/prev_sponcers/11.jpg" alt=""></span>
+          </div>
+
+          <div class="col-sm-4 col-md-2">
+            <span><img src="img/prev_sponcers/12a.jpg" alt=""></span>
+          </div>
+
+        </div>
+
+        <br><br>
+
+        <div class="row">
+
+          <div class="col-sm-4 col-md-6">
+            <span><img src="img/prev_sponcers/3.png" alt=""></span>
+          </div>
+
+          <div class="col-sm-4 col-md-6">
+            <span><img src="img/prev_sponcers/13.jpg" alt=""></span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--==========================
+  Contact Section
+  ============================-->
+  <section id="contact">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">Contact Us</h3>
+          <div class="section-title-divider"></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3 col-md-push-2">
+          <div class="info">
+            <div>
+              <i class="fa fa-map-marker"></i>
+              <p>
+                Civil Engineering Department <br> 
+                Osmania University, Amberpet, <br>
+                Hyderabad, Telangana 500007
+              </p>
+            </div>
+
+            <div>
+              <i class="fa fa-envelope"></i>
+              <p>civilnirmaan2020@gmail.com</p>
+            </div>
+
+            <div>
+              <i class="fa fa-phone"></i>
+              <p><b>K.Keerthana Netha</b> : 9133856428 <br>
+                <b>MD.Mubeen Pasha</b>  : 7013480698</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 style="padding-top: 20px;" class="section-title">Location</h3>
+          <div class="section-title-divider"></div>
+        </div>
+      </div>
+      <div class=loc>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.099768003798!2d78.51687414981075!3d17.40699910676383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb999f8b88ada3%3A0x1706ada4496b891!2sCivil%20Engineering%20Department%2C%20Osmania%20University%2C%20Amberpet%2C%20Hyderabad%2C%20Telangana%20500007!5e0!3m2!1sen!2sin!4v1580918696505!5m2!1sen!2sin" frameborder="0" style="width:100%; height: 450px; border:0;" allowfullscreen=""></iframe>
+      </div>  
+    </div>
+
+  </section>
+
+  <!--==========================
+  Footer
+============================-->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="credits">
+            Designed by <a href="https://www.instagram.com/_basementfox/">Brahmani</a> and <a href="https://www.instagram.com/rohan__ruku/">Rohan</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- Required JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/morphext/morphext.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/stickyjs/sticky.js"></script>
+  <script src="lib/easing/easing.js"></script>
+
+  <!-- Template Specisifc Custom Javascript File -->
+  <script src="js/custom.js"></script>
+  <script src="contactform/contactform.js"></script>
+
+  <!-- js files for countdown -->
+  <script type="text/javascript" src="countdown/flipdown.js"></script>
+  <script type="text/javascript" src="countdown/main.js"></script>
+
+
+</body>
+
+</html>
